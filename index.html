@@ -4,7 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amigos | KS International University</title>
+  <meta name="description" content="Amigos - the vibrant student activities team at King Salman International University. Join us for events, fun, and community impact!" />
+  <meta name="keywords" content="Amigos, KSIU, student activities, events, university life" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -18,8 +24,10 @@
       text-align: center;
     }
     header img {
-      width: 80px;
+      width: 100px;
+      height: auto;
       vertical-align: middle;
+      margin-bottom: 0.5rem;
     }
     nav {
       background: #ff4d00;
@@ -31,6 +39,16 @@
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffd6c0;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
     section {
       padding: 2rem;
@@ -50,11 +68,19 @@
       text-align: center;
       padding: 1rem;
     }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: white;
+      font-size: 1.2rem;
+    }
+    .social-icons a:hover {
+      color: #ffd6c0;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="/mnt/data/AMIGOS.jpg" alt="Amigos Logo" />
+    <img src="AMIGOS.jpg" alt="Amigos logo with crowned eagle design" />
     <h1>Amigos</h1>
     <p>King Salman International University</p>
   </header>
@@ -80,6 +106,10 @@
       <li>Game Nights & Tournaments</li>
       <li>Community Clean-up Days</li>
       <li>Festivals and Cultural Days</li>
+      <li>Ramadan Iftar 2024 & 2025</li>
+      <li>Dental Medicine Convoy 2025</li>
+      <li>Anything But a Backpack Event</li>
+      <li>...and more exciting activities!</li>
     </ul>
   </section>
 
@@ -91,27 +121,32 @@
   <section id="join">
     <h2>Join Amigos</h2>
     <p>Want to be part of the excitement? Whether you love organizing events or just want to have fun while giving back to your university, Amigos is the place for you!</p>
-    <p>Email us at <a href="mailto:join@amigos.ksiu.edu.eg">join@amigos.ksiu.edu.eg</a> to sign up.</p>
+    <p>Email us at <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a> to sign up.</p>
   </section>
 
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Event+1" alt="Event 1" />
-      <img src="https://via.placeholder.com/300x200?text=Event+2" alt="Event 2" />
-      <img src="https://via.placeholder.com/300x200?text=Event+3" alt="Event 3" />
-      <img src="https://via.placeholder.com/300x200?text=Event+4" alt="Event 4" />
+      <img src="https://via.placeholder.com/300x200?text=Event+1" alt="Students enjoying Event 1" />
+      <img src="https://via.placeholder.com/300x200?text=Event+2" alt="Fun activities at Event 2" />
+      <img src="https://via.placeholder.com/300x200?text=Event+3" alt="Crowd cheering at Event 3" />
+      <img src="https://via.placeholder.com/300x200?text=Event+4" alt="Volunteers at Event 4" />
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:amigos@ksiu.edu.eg">amigos@ksiu.edu.eg</a></p>
-    <p>Instagram: <a href="#">@amigos.ksiu</a></p>
+    <p>Email: <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/amigos_ksiu" target="_blank"><i class="fab fa-instagram"></i> @amigos_ksiu</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61576595225470" target="_blank"><i class="fab fa-facebook"></i> Amigos on Facebook</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Amigos | King Salman International University</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/amigos_ksiu" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61576595225470" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
   </footer>
 </body>
 </html>
