@@ -4,51 +4,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amigos | KS International University</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #fff;
       color: #333;
+      overflow-x: hidden;
     }
+
     header {
       background-color: #FF2D00;
       color: white;
       padding: 1rem;
       text-align: center;
+      animation: fadeInDown 1s ease-in-out;
     }
+
     header img {
       width: 100px;
       vertical-align: middle;
     }
+
     nav {
       background: #FF2D00;
       padding: 0.5rem;
       text-align: center;
+      animation: slideInTop 1.2s ease-in-out;
     }
+
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: transform 0.2s;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+
     section {
       padding: 2rem;
+      animation: fadeIn 1s ease-in;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
     footer {
       background-color: #FF2D00;
       color: white;
       text-align: center;
       padding: 1rem;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInTop {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 70px;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
@@ -68,48 +129,55 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Amigos</h2>
-    <p>Amigos is a fun and dynamic student activities team at King Salman International University. We organize engaging events, student gatherings, and volunteer initiatives to build community spirit and create lasting memories.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Amigos</h2>
+      <p>Amigos is a fun and dynamic student activities team at King Salman International University. We organize engaging events, student gatherings, and volunteer initiatives to build community spirit and create lasting memories.</p>
+    </section>
 
-  <section id="events">
-    <h2>Our Events</h2>
-    <ul>
-      <li>Ramadan Iftar 2024 & 2025</li>
-      <li>Dental Medicine Convoy 2025</li>
-      <li>Anything but a Backpack Event</li>
-      <li>...and more!</li>
-    </ul>
-  </section>
+    <section id="events">
+      <h2>Our Events</h2>
+      <ul>
+        <li>Ramadan Iftar 2024 & 2025</li>
+        <li>Dental Medicine Convoy 2025</li>
+        <li>Anything but a Backpack Event</li>
+        <li>...and more!</li>
+      </ul>
+    </section>
 
-  <section id="team">
-    <h2>Meet the Team</h2>
-    <p>Our team is made up of passionate, creative students dedicated to making campus life unforgettable. Stay tuned — profiles coming soon!</p>
-  </section>
+    <section id="team">
+      <h2>Meet the Team</h2>
+      <p>Our team is made up of passionate, creative students dedicated to making campus life unforgettable. Stay tuned — profiles coming soon!</p>
+    </section>
 
-  <section id="join">
-    <h2>Join Amigos</h2>
-    <p>Want to be part of the excitement? Whether you love organizing events or just want to have fun while giving back to your university, Amigos is the place for you!</p>
-    <p>Email us at <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a> to sign up.</p>
-  </section>
+    <section id="join">
+      <h2>Join Amigos</h2>
+      <p>Want to be part of the excitement? Whether you love organizing events or just want to have fun while giving back to your university, Amigos is the place for you!</p>
+      <p>Email us at <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a> to sign up.</p>
+    </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Event+1" alt="Event 1" />
-      <img src="https://via.placeholder.com/300x200?text=Event+2" alt="Event 2" />
-      <img src="https://via.placeholder.com/300x200?text=Event+3" alt="Event 3" />
-      <img src="https://via.placeholder.com/300x200?text=Event+4" alt="Event 4" />
-    </div>
-  </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=Event+1" alt="Amigos student gathering at event 1" />
+        <img src="https://via.placeholder.com/300x200?text=Event+2" alt="Amigos event celebration 2" />
+        <img src="https://via.placeholder.com/300x200?text=Event+3" alt="Amigos event 3 activity" />
+        <img src="https://via.placeholder.com/300x200?text=Event+4" alt="Amigos group photo at event 4" />
+        <img src="f83c8478-d62d-4a70-a747-0fbe4d2ea337.jpg" alt="Amigos members at the Anything but a Backpack event" />
+        <img src="6dcb4bc3-b7c5-4646-8a45-fec082bb1b0c.jpg" alt="Group photo from Ramadan Iftar 2025" />
+        <img src="d04c1fbc-02b9-41cf-82e6-138b9117356c.jpg" alt="Dental convoy outreach 2025" />
+        <img src="3ec37312-2bb4-46a2-8da3-ba39fdd29210.jpg" alt="Volunteering interaction with a child" />
+        <img src="2bce993a-da26-4789-8f82-98509a3a3013.jpg" alt="Ramadan Iftar night group photo" />
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a></p>
-    <p>Instagram: <a href="#">@amigos_ksiu</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61576595225470" target="_blank">Amigos Facebook</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:amigosksiu@gmail.com">amigosksiu@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/amigos_ksiu" target="_blank">@amigos_ksiu</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61576595225470" target="_blank">Amigos Facebook</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Amigos | King Salman International University</p>
